@@ -1,28 +1,22 @@
-let name = prompt("What is your name?");
+let name = prompt("Hello, what is your name?");
 alert("Welcome, " + name + "! 👋");
 
-let age = prompt("How old are you?");
+let age = prompt("What is your age, if I may ask?");
 if (age < 18) {
-  alert("You're young and full of energy! 🚀");
+  alert("Youth is a wonderment! 🚀");
 } else {
-  alert("Experience is a powerful thing 😎");
-}
+  alert("What a wonderful age 😎");
+} // ← THIS was missing
 
 let color = prompt("What is your favorite color?");
 if (color.toLowerCase() === "blue") {
-  alert("Blue is calm and cool 💙");
+  alert("Blue Bayou, cool choice 💙");
 } else {
   alert(color + " is a great choice 🎨");
 }
 
 let book = prompt("What is your favorite book?");
-alert("Nice! \"" + book + "\" sounds interesting 📖");
+alert('Nice! "' + book + '" sounds fascinating 📖');
 
 let song = prompt("What is your favorite song?");
-alert("I'll have to check out \"" + song + "\" 🎵");
-
- 
-
-
-
-
+alert('I must listen to it. "' + song + '" 🎵');
