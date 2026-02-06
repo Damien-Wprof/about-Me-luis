@@ -1,3 +1,6 @@
+
+let score = 0;
+
 let name = prompt("Hello, what is your name?");
 console.log("Name entered:", name);
 
@@ -34,3 +37,49 @@ console.log("Song entered:", song);
 
 alert('I must listen to it. "' + song + '" 🎵');
 
+// NUMBER GAME
+let secretNumber = 3;
+
+for (let i = 1; i <= 4; i++) {
+
+  let guess = prompt("Try " + i + " of 4: Guess the number");
+
+  if (guess == secretNumber) {
+    alert("🎉 Correct!");
+    break;
+  } else if (guess < secretNumber) {
+    alert("Too low ⬇️");
+  } else {
+    alert("Too high ⬆️");
+  }
+
+  if (i === 4) {
+    alert("Out of tries! The number was " + secretNumber);
+  }
+}
+
+// ✅ NUMBER LOOP ENDS RIGHT HERE
+
+
+// 7th Question - Bread Game STARTS HERE
+let breads = ["sourdough", "artisan", "brioche", "baguette", "croissant", "ciabatta"];
+let correct = false;
+
+for (let i = 1; i <= 6; i++) {
+
+  let guess = prompt("7️⃣ Try " + i + " of 6: Name a type of bread!");
+  guess = guess.toLowerCase();
+
+  if (breads.includes(guess)) {
+    alert("🥖 Correct!");
+    break;
+  } else {
+    alert("Nope, try again!");
+  }
+
+  if (i === 6) {
+    alert("Out of tries!");
+  }
+}
+
+alert("Possible answers were: " + breads.join(", "));
