@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: limegreen;
+  position: relative;
+}
+
+/* SIDE CONTAINER */
+.top-row {
+  display: flex;
+  justify-content: space-between; /* spreads items evenly */
+  align-items: flex-start;        /* aligns top edges */
+  gap: 40px;                       /* spacing between items */
+  margin-top: 20px;
+}
+
+.work-history {
+  width: 300px;
+  text-align: left;
+}
+
+.places-section {
+  width: 300px;
+  text-align: center;
+}
+
+.places-section ol {
+  display: inline-block;
+  text-align: left;
+  padding-left: 30px;
+  margin-top: 10px;
+}

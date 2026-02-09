@@ -83,3 +83,14 @@ for (let i = 1; i <= 6; i++) {
 }
 
 alert("Possible answers were: " + breads.join(", "));
+
+function showPlaces() {
+  let list = document.getElementById("placesList");
+
+  if (list.style.display === "none") {
+    list.style.display = "block";
+  } else {
+    list.style.display = "none";
+  }
+}
+
